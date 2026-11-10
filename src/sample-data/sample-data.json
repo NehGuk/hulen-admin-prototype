@@ -1,0 +1,571 @@
+[
+  {
+    "full_name": "Ingrid Haugen",
+    "email": "ingrid.haugen@example.com",
+    "phone_number": "+47 000 00 001",
+    "address_line_1": "Fjellveien 14",
+    "address_line_2": null,
+    "postal_code": "5019",
+    "city": "Bergen",
+    "date_of_birth": "1985-03-12",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example60181590830",
+    "is_call_attendant": true,
+    "current_role": "Lighting",
+    "previous_roles": [],
+    "is_volunteer": false,
+    "is_staff": true,
+    "is_board_member": true,
+    "points": 0,
+    "dugnads": [],
+    "next_of_kin_full_name": "Per Haugen",
+    "next_of_kin_phone_number": "+47 000 01 001"
+  },
+  {
+    "full_name": "Magnus Solberg",
+    "email": "magnus.solberg@example.com",
+    "phone_number": "+47 000 00 002",
+    "address_line_1": "Lyngveien 3",
+    "address_line_2": null,
+    "postal_code": "5032",
+    "city": "Bergen",
+    "date_of_birth": "1991-07-24",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example31860913909",
+    "is_call_attendant": false,
+    "current_role": "Kitchen",
+    "previous_roles": [],
+    "is_volunteer": false,
+    "is_staff": true,
+    "is_board_member": false,
+    "points": 0,
+    "dugnads": [],
+    "next_of_kin_full_name": "Kari Solberg",
+    "next_of_kin_phone_number": "+47 000 01 002"
+  },
+  {
+    "full_name": "Sara Lindqvist",
+    "email": "sara.lindqvist@example.com",
+    "phone_number": "+47 000 00 003",
+    "address_line_1": "Solhaugen 7B",
+    "address_line_2": "Leil. 201",
+    "postal_code": "5058",
+    "city": "Bergen",
+    "date_of_birth": "1988-11-02",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example08246281948",
+    "is_call_attendant": false,
+    "current_role": "Production",
+    "previous_roles": [],
+    "is_volunteer": false,
+    "is_staff": true,
+    "is_board_member": false,
+    "points": 0,
+    "dugnads": [],
+    "next_of_kin_full_name": "Anders Lindqvist",
+    "next_of_kin_phone_number": "+47 000 01 003"
+  },
+  {
+    "full_name": "Henrik Dahl",
+    "email": "henrik.dahl@example.com",
+    "phone_number": "+47 000 00 004",
+    "address_line_1": "Strandkaien 22",
+    "address_line_2": null,
+    "postal_code": "5013",
+    "city": "Bergen",
+    "date_of_birth": "1979-01-30",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example99351819093",
+    "is_call_attendant": false,
+    "current_role": "Sound",
+    "previous_roles": [],
+    "is_volunteer": false,
+    "is_staff": true,
+    "is_board_member": true,
+    "points": 0,
+    "dugnads": [],
+    "next_of_kin_full_name": "Berit Dahl",
+    "next_of_kin_phone_number": "+47 000 01 004"
+  },
+  {
+    "full_name": "Nora Eikeland",
+    "email": "nora.eikeland@example.com",
+    "phone_number": "+47 000 00 005",
+    "address_line_1": "Bakkegaten 9",
+    "address_line_2": "2. etg.",
+    "postal_code": "5011",
+    "city": "Bergen",
+    "date_of_birth": "1995-05-18",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example79754323194",
+    "is_call_attendant": false,
+    "current_role": "Bartender",
+    "previous_roles": [
+      {
+        "period": "2025_1",
+        "role": "Wardrobe"
+      }
+    ],
+    "is_volunteer": false,
+    "is_staff": true,
+    "is_board_member": false,
+    "points": 0,
+    "dugnads": [],
+    "next_of_kin_full_name": "Eirik Eikeland",
+    "next_of_kin_phone_number": "+47 000 01 005"
+  },
+  {
+    "full_name": "Tobias Berg",
+    "email": "tobias.berg@example.com",
+    "phone_number": "+47 000 00 006",
+    "address_line_1": "Skogveien 41",
+    "address_line_2": null,
+    "postal_code": "5072",
+    "city": "Bergen",
+    "date_of_birth": "1993-09-09",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example91186252760",
+    "is_call_attendant": false,
+    "current_role": "Lighting",
+    "previous_roles": [
+      {
+        "period": "2026_1",
+        "role": "Production"
+      },
+      {
+        "period": "2023_2",
+        "role": "Stagecrew"
+      }
+    ],
+    "is_volunteer": false,
+    "is_staff": true,
+    "is_board_member": false,
+    "points": 0,
+    "dugnads": [],
+    "next_of_kin_full_name": "Lise Berg",
+    "next_of_kin_phone_number": "+47 000 01 006"
+  },
+  {
+    "full_name": "Emma Vik",
+    "email": "emma.vik@example.com",
+    "phone_number": "+47 000 00 007",
+    "address_line_1": "Havnegaten 5",
+    "address_line_2": "Leil. 14",
+    "postal_code": "5003",
+    "city": "Bergen",
+    "date_of_birth": "1998-12-21",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example59797114710",
+    "is_call_attendant": false,
+    "current_role": "Production",
+    "previous_roles": [
+      {
+        "period": "2026_1",
+        "role": "Door"
+      },
+      {
+        "period": "2024_2",
+        "role": "Stagecrew"
+      }
+    ],
+    "is_volunteer": false,
+    "is_staff": true,
+    "is_board_member": false,
+    "points": 0,
+    "dugnads": [],
+    "next_of_kin_full_name": "Ole Vik",
+    "next_of_kin_phone_number": "+47 000 01 007"
+  },
+  {
+    "full_name": "Jonas Strand",
+    "email": "jonas.strand@example.com",
+    "phone_number": "+47 000 00 008",
+    "address_line_1": "Blåbærveien 8",
+    "address_line_2": null,
+    "postal_code": "5035",
+    "city": "Bergen",
+    "date_of_birth": "1990-04-15",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example75291703423",
+    "is_call_attendant": false,
+    "current_role": "Lighting",
+    "previous_roles": [
+      {
+        "period": "2026_1",
+        "role": "Sound"
+      },
+      {
+        "period": "2024_2",
+        "role": "Door"
+      },
+      {
+        "period": "2023_2",
+        "role": "Wardrobe"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": true,
+    "points": 42,
+    "dugnads": ["2026_autumn", "2026_spring", "2025_spring"],
+    "next_of_kin_full_name": "Siri Strand",
+    "next_of_kin_phone_number": "+47 000 01 008"
+  },
+  {
+    "full_name": "Lea Moen",
+    "email": "lea.moen@example.com",
+    "phone_number": "+47 000 00 009",
+    "address_line_1": "Kirkeveien 17",
+    "address_line_2": null,
+    "postal_code": "5037",
+    "city": "Bergen",
+    "date_of_birth": "2001-02-27",
+    "active_contract": false,
+    "contract_path": "https://www.blablabla.no/example68465632122",
+    "is_call_attendant": true,
+    "current_role": "Kitchen",
+    "previous_roles": [],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 18,
+    "dugnads": ["2026_spring", "2025_spring", "2024_autumn"],
+    "next_of_kin_full_name": "Marit Moen",
+    "next_of_kin_phone_number": "+47 000 01 009"
+  },
+  {
+    "full_name": "Oscar Hagen",
+    "email": "oscar.hagen@example.com",
+    "phone_number": "+47 000 00 010",
+    "address_line_1": "Elvegaten 30",
+    "address_line_2": "H0201",
+    "postal_code": "5006",
+    "city": "Bergen",
+    "date_of_birth": "1999-08-06",
+    "active_contract": false,
+    "contract_path": null,
+    "is_call_attendant": true,
+    "current_role": "DJ",
+    "previous_roles": [
+      {
+        "period": "2026_1",
+        "role": "Wardrobe"
+      },
+      {
+        "period": "2024_2",
+        "role": "Production"
+      },
+      {
+        "period": "2023_2",
+        "role": "Sound"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 31,
+    "dugnads": ["2026_autumn", "2024_spring"],
+    "next_of_kin_full_name": "Terje Hagen",
+    "next_of_kin_phone_number": "+47 000 01 010"
+  },
+  {
+    "full_name": "Maja Nilsen",
+    "email": "maja.nilsen@example.com",
+    "phone_number": "+47 000 00 011",
+    "address_line_1": "Granveien 12",
+    "address_line_2": null,
+    "postal_code": "5081",
+    "city": "Bergen",
+    "date_of_birth": "1984-06-19",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example68599528907",
+    "is_call_attendant": false,
+    "current_role": "Lighting",
+    "previous_roles": [],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": true,
+    "points": 57,
+    "dugnads": ["2026_autumn"],
+    "next_of_kin_full_name": "Jon Nilsen",
+    "next_of_kin_phone_number": "+47 000 01 011"
+  },
+  {
+    "full_name": "Filip Aas",
+    "email": "filip.aas@example.com",
+    "phone_number": "+47 000 00 012",
+    "address_line_1": "Tunet 2",
+    "address_line_2": null,
+    "postal_code": "5143",
+    "city": "Bergen",
+    "date_of_birth": "2003-10-03",
+    "active_contract": false,
+    "contract_path": "https://www.blablabla.no/example76031372159",
+    "is_call_attendant": true,
+    "current_role": null,
+    "previous_roles": [
+      {
+        "period": "2026_1",
+        "role": "Wardrobe"
+      },
+      {
+        "period": "2025_1",
+        "role": "Production"
+      },
+      {
+        "period": "2023_1",
+        "role": "Sound"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 9,
+    "dugnads": [],
+    "next_of_kin_full_name": "Hanne Aas",
+    "next_of_kin_phone_number": "+47 000 01 012"
+  },
+  {
+    "full_name": "Sofie Brekke",
+    "email": "sofie.brekke@example.com",
+    "phone_number": "+47 000 00 013",
+    "address_line_1": "Marienlystveien 6",
+    "address_line_2": "Leil. 3",
+    "postal_code": "5068",
+    "city": "Bergen",
+    "date_of_birth": "1996-01-11",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example01396245957",
+    "is_call_attendant": true,
+    "current_role": "Bartender",
+    "previous_roles": [
+      {
+        "period": "2026_1",
+        "role": "Stagecrew"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 24,
+    "dugnads": ["2026_autumn", "2024_spring"],
+    "next_of_kin_full_name": "Martin Brekke",
+    "next_of_kin_phone_number": "+47 000 01 013"
+  },
+  {
+    "full_name": "Amina Hussein",
+    "email": "amina.hussein@example.com",
+    "phone_number": "+47 000 00 014",
+    "address_line_1": "Nordåsveien 58",
+    "address_line_2": null,
+    "postal_code": "5235",
+    "city": "Bergen",
+    "date_of_birth": "1992-03-28",
+    "active_contract": false,
+    "contract_path": null,
+    "is_call_attendant": false,
+    "current_role": "Kitchen",
+    "previous_roles": [
+      {
+        "period": "2026_1",
+        "role": "Production"
+      },
+      {
+        "period": "2025_1",
+        "role": "Stagecrew"
+      },
+      {
+        "period": "2023_2",
+        "role": "Sound"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 12,
+    "dugnads": ["2026_spring"],
+    "next_of_kin_full_name": "Yusuf Hussein",
+    "next_of_kin_phone_number": "+47 000 01 014"
+  },
+  {
+    "full_name": "Ida Fjeld",
+    "email": "ida.fjeld@example.com",
+    "phone_number": "+47 000 00 015",
+    "address_line_1": "Vestre Torggate 4",
+    "address_line_2": "3. etg.",
+    "postal_code": "5015",
+    "city": "Bergen",
+    "date_of_birth": "1987-09-14",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example85280841485",
+    "is_call_attendant": false,
+    "current_role": "Lighting",
+    "previous_roles": [
+      {
+        "period": "2025_2",
+        "role": "Door"
+      },
+      {
+        "period": "2024_1",
+        "role": "Bartender"
+      },
+      {
+        "period": "2023_1",
+        "role": "Stagecrew"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 36,
+    "dugnads": ["2026_autumn"],
+    "next_of_kin_full_name": null,
+    "next_of_kin_phone_number": null
+  },
+  {
+    "full_name": "Piotr Nowak",
+    "email": "piotr.nowak@example.com",
+    "phone_number": "+47 000 00 016",
+    "address_line_1": "Møllendalsveien 21",
+    "address_line_2": null,
+    "postal_code": "5009",
+    "city": "Bergen",
+    "date_of_birth": "1989-12-05",
+    "active_contract": false,
+    "contract_path": null,
+    "is_call_attendant": false,
+    "current_role": null,
+    "previous_roles": [
+      {
+        "period": "2023_2",
+        "role": "Sound"
+      },
+      {
+        "period": "2023_1",
+        "role": "Door"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 5,
+    "dugnads": ["2024_autumn"],
+    "next_of_kin_full_name": "Anna Nowak",
+    "next_of_kin_phone_number": "+47 000 01 016"
+  },
+  {
+    "full_name": "Thea Bakke",
+    "email": "thea.bakke@example.com",
+    "phone_number": "+47 000 00 017",
+    "address_line_1": "Lilleveien 10",
+    "address_line_2": null,
+    "postal_code": "5164",
+    "city": "Bergen",
+    "date_of_birth": "2000-07-22",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example04743957551",
+    "is_call_attendant": true,
+    "current_role": "Sound",
+    "previous_roles": [
+      {
+        "period": "2025_2",
+        "role": "Production"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": true,
+    "points": 48,
+    "dugnads": ["2026_autumn", "2026_spring"],
+    "next_of_kin_full_name": "Gunnar Bakke",
+    "next_of_kin_phone_number": "+47 000 01 017"
+  },
+  {
+    "full_name": "Mathias Kvam",
+    "email": "mathias.kvam@example.com",
+    "phone_number": "+47 000 00 018",
+    "address_line_1": "Åsane Terrasse 9",
+    "address_line_2": null,
+    "postal_code": "5116",
+    "city": "Bergen",
+    "date_of_birth": "1994-11-30",
+    "active_contract": false,
+    "contract_path": null,
+    "is_call_attendant": false,
+    "current_role": "Sound",
+    "previous_roles": [
+      {
+        "period": "2025_2",
+        "role": "Stagecrew"
+      },
+      {
+        "period": "2024_2",
+        "role": "Host"
+      },
+      {
+        "period": "2023_1",
+        "role": "Lighting"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 15,
+    "dugnads": [],
+    "next_of_kin_full_name": null,
+    "next_of_kin_phone_number": null
+  },
+  {
+    "full_name": "Hedda Os",
+    "email": "hedda.os@example.com",
+    "phone_number": "+47 000 00 019",
+    "address_line_1": "Sjøgaten 15",
+    "address_line_2": "Leil. 8",
+    "postal_code": "5004",
+    "city": "Bergen",
+    "date_of_birth": "2002-04-09",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example37265167612",
+    "is_call_attendant": true,
+    "current_role": "Door",
+    "previous_roles": [],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 27,
+    "dugnads": ["2026_autumn", "2026_spring", "2024_autumn"],
+    "next_of_kin_full_name": "Tone Os",
+    "next_of_kin_phone_number": "+47 000 01 019"
+  },
+  {
+    "full_name": "Leif Tveit",
+    "email": "leif.tveit@example.com",
+    "phone_number": "+47 000 00 020",
+    "address_line_1": "Tveitevegen 33",
+    "address_line_2": null,
+    "postal_code": "5251",
+    "city": "Bergen",
+    "date_of_birth": "1965-02-17",
+    "active_contract": true,
+    "contract_path": "https://www.blablabla.no/example83184171319",
+    "is_call_attendant": true,
+    "current_role": "Stagecrew",
+    "previous_roles": [
+      {
+        "period": "2023_1",
+        "role": "DJ"
+      },
+      {
+        "period": "2022_2",
+        "role": "Host"
+      }
+    ],
+    "is_volunteer": true,
+    "is_staff": false,
+    "is_board_member": false,
+    "points": 3,
+    "dugnads": ["2026_autumn", "2025_autumn", "2024_spring"],
+    "next_of_kin_full_name": "Randi Tveit",
+    "next_of_kin_phone_number": "+47 000 01 020"
+  }
+]

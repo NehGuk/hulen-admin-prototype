@@ -1,12 +1,12 @@
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
-import LoginArea from "./components/LoginArea/LoginArea"
+import DataArea from "./components/DataArea/DataArea"
 
 function App() {
   return (
     <>
       <Header />
-      <LoginArea />
+      <DataArea />
       <Footer />
     </>
   )
