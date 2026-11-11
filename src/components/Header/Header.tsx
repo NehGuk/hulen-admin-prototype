@@ -1,5 +1,14 @@
-export default function Header() {
+// Header.tsx
+type HeaderProps = {
+  isLoggedIn: boolean
+  onLogout: () => void
+}
+
+export default function Header({ isLoggedIn, onLogout }: HeaderProps) {
   return (
-    <>{/* <img src="https://cdn.sanity.io/images/gdx7kxvn/production/a0728d2e5029ea1e9bdaca1b15806832e8f50d01-646x541.svg" /> */}Header </>
+    <header>
+      <h1>Hulen Admin</h1>
+      {isLoggedIn && <button onClick={onLogout}>Log out</button>}
+    </header>
   )
 }
