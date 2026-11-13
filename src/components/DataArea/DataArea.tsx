@@ -1,4 +1,20 @@
+import { useState, useEffect } from "react"
+import Filters from "../Filters/Filters"
+import Table from "../Table/Table"
+import { getMembers } from "../../api/members"
+import type { Member } from "../../types/types"
+
 // DataArea.tsx
 export default function DataArea() {
-  return <p>Data visible here. Names, filters etc.</p>
+  const [members, setMembers] = useState<Member[]>([])
+  useEffect(() => {
+    getMembers().then(setMembers)
+  }, [])
+
+  return (
+    <>
+      <Filters />
+      <Table members={members} />
+    </>
+  )
 }
