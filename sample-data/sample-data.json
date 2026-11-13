@@ -302,7 +302,7 @@
     "active_contract": false,
     "contract_path": "https://www.blablabla.no/example76031372159",
     "is_call_attendant": true,
-    "current_role": null,
+    "current_role": "Door",
     "previous_roles": [
       {
         "period": "2026_1",
@@ -434,7 +434,7 @@
     "active_contract": false,
     "contract_path": null,
     "is_call_attendant": false,
-    "current_role": null,
+    "current_role": "DJ",
     "previous_roles": [
       {
         "period": "2023_2",

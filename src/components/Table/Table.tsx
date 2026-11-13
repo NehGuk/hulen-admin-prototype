@@ -3,8 +3,16 @@ import type { Member } from "../../types/types"
 type TableProps = {
   members: Member[]
 }
+
 export default function Table({ members }: TableProps) {
-  console.log(members)
+  const sortedMembers: Member[] = [...members].sort((a, b) => {
+    const roleA = a.current_role
+    const roleB = b.current_role
+    if (roleA === roleB) return a.full_name.localeCompare(b.full_name, "nb")
+    if (roleA === null) return 1
+    if (roleB === null) return -1
+    return roleA.localeCompare(roleB, "nb")
+  })
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full min-w-max">
@@ -21,7 +29,7 @@ export default function Table({ members }: TableProps) {
           </tr>
         </thead>
         <tbody>
-          {members.map((m) => (
+          {sortedMembers.map((m) => (
             <tr key={m.email}>
               <td>{m.current_role}</td>
               <td>{m.full_name}</td>
@@ -40,27 +48,5 @@ export default function Table({ members }: TableProps) {
         </tbody>
       </table>
     </div>
-
-    /* Table here: {members.length} */
   )
 }
-
-/* ;<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Phone</th>
-    </tr>
-  </thead>
-  <tbody>
-    {members.map((member) => (
-      <tr key={member.email}>
-        <td>{member.full_name}</td>
-        <td>{member.email}</td>
-        <td>{member.phone_number}</td>
-      </tr>
-    ))}
-  </tbody>
-</table>
- */
