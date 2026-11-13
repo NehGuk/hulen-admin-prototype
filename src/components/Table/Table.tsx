@@ -15,20 +15,28 @@ export default function Table({ members }: TableProps) {
             <th>Email</th>
             <th>Phone</th>
             <th>Active contract</th>
+            <th>Contract PDF</th>
             <th>Points</th>
             <th>Dugnads</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>blablabla</td>
-            <td>blablabla</td>
-            <td>blablabla</td>
-            <td>blablabla</td>
-            <td>blablabla</td>
-            <td>blablabla</td>
-            <td>blablabla</td>
-          </tr>
+          {members.map((m) => (
+            <tr key={m.email}>
+              <td>{m.current_role}</td>
+              <td>{m.full_name}</td>
+              <td>{m.email}</td>
+              <td>{m.phone_number}</td>
+              <td>{m.active_contract ? "Yep" : "Nope"}</td>
+              <td>
+                <a href="./../../../sample-contract-models/contract-sample.pdf" target="_blank">
+                  Go
+                </a>
+              </td>
+              <td>{m.points}</td>
+              <td>{m.dugnads.length}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
