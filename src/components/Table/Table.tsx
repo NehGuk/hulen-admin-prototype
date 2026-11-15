@@ -17,7 +17,7 @@ export default function Table({ members }: TableProps) {
     <div className="w-full overflow-x-auto">
       <table className="w-full min-w-max">
         <thead>
-          <tr>
+          <tr className="text-left">
             <th>Role</th>
             <th>Name</th>
             <th>Email</th>
