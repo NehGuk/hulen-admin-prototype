@@ -9,8 +9,8 @@ const DEMO_EMAIL = import.meta.env.VITE_DEMO_EMAIL
 const DEMO_PASSWORD = import.meta.env.VITE_DEMO_PASSWORD
 
 export default function LoginForm({ onLogin }: LoginProps) {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("admin@hulen.example.no")
+  const [password, setPassword] = useState("admin")
   const [error, setError] = useState<string | null>(null)
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
