@@ -1,3 +1,23 @@
+export const ROLES = [
+  "Artistvert",
+  "Bartender",
+  "Booking",
+  "Catering",
+  "Design",
+  "DJ",
+  "Foto",
+  "IT-utvikler",
+  "Materialforvalter",
+  "Plakat",
+  "Redaksjon",
+  "SoMe",
+  "Stagecrew",
+  "Vert",
+  "Styret",
+] as const
+
+export type RoleName = (typeof ROLES)[number]
+
 export type SemesterName = "spring" | "autumn"
 
 export type DugnadSemester = `${number}_${SemesterName}`
@@ -6,7 +26,7 @@ export type Period = `${number}_${1 | 2}`
 
 export type PreviousRole = {
   period: Period
-  role: string
+  role: RoleName
 }
 
 export type Member = {
@@ -21,11 +41,9 @@ export type Member = {
   active_contract: boolean
   contract_path: string | null
   is_call_attendant: boolean
-  current_role: string | null
+  is_team_leader: boolean
+  current_role: RoleName | null // null = no role this semester
   previous_roles: PreviousRole[] // newest first
-  is_volunteer: boolean
-  is_staff: boolean
-  is_board_member: boolean
   points: number
   dugnads: DugnadSemester[] // newest first
   next_of_kin_full_name: string | null
