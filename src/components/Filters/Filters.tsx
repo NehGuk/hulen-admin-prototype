@@ -9,7 +9,7 @@ export default function Filters({ members }: FilterProps) {
     <section>
       <form>
         <label htmlFor="choosePeriod">Semester</label>
-        <select id="choosePeriod">
+        <select id="choosePeriod" defaultValue="2026 2">
           <option>2026 2</option>
           <option>2026 1</option>
           <option>2025 2</option>
@@ -21,8 +21,7 @@ export default function Filters({ members }: FilterProps) {
         </select>
 
         <label htmlFor="chooseRole">Role</label>
-        <select id="chooseRole">
-          <option>All roles</option>
+        <select id="chooseRole" defaultValue="All roles">
           <option>Artistvert</option>
           <option>Bartender</option>
           <option>Booking</option>
@@ -38,6 +37,7 @@ export default function Filters({ members }: FilterProps) {
           <option>Stagecrew</option>
           <option>Vert</option>
           <option>Styret</option>
+          <option>All roles</option>
         </select>
 
         <label htmlFor="active">Active</label>
