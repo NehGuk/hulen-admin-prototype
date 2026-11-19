@@ -5,6 +5,10 @@ type TableProps = {
 }
 
 export default function Table({ members }: TableProps) {
+  const rolesInUse = [...new Set(members.map((m) => m.current_role).filter((role) => role !== null))].sort((a, b) =>
+    a.localeCompare(b, "nb")
+  )
+  console.log(rolesInUse)
   const sortedMembers: Member[] = [...members].sort((a, b) => {
     const roleA = a.current_role
     const roleB = b.current_role
@@ -22,6 +26,7 @@ export default function Table({ members }: TableProps) {
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Team leader</th>
             <th>Active contract</th>
             <th>Contract PDF</th>
             <th>Points</th>
@@ -35,6 +40,7 @@ export default function Table({ members }: TableProps) {
               <td>{m.full_name}</td>
               <td>{m.email}</td>
               <td>{m.phone_number}</td>
+              <td>{m.is_team_leader && "Yep"}</td>
               <td>{m.active_contract ? "Yep" : "Nope"}</td>
               <td>
                 <a href="./../../../sample-contract-models/contract-sample.pdf" target="_blank">

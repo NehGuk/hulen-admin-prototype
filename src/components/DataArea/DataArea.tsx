@@ -13,7 +13,7 @@ export default function DataArea() {
 
   return (
     <>
-      <Filters />
+      <Filters members={members} />
       <Table members={members} />
     </>
   )

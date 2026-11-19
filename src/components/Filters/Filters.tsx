@@ -1,4 +1,10 @@
-export default function Filters() {
+import type { Member } from "../../types/types"
+type FilterProps = {
+  members: Member[]
+}
+
+export default function Filters({ members }: FilterProps) {
+  console.log(members)
   return (
     <section>
       <form>
@@ -11,24 +17,37 @@ export default function Filters() {
           <option>2024 1</option>
           <option>2023 2</option>
           <option>2023 1</option>
+          <option>All time</option>
         </select>
 
         <label htmlFor="chooseRole">Role</label>
         <select id="chooseRole">
-          <option>Stagecrew</option>
+          <option>All roles</option>
+          <option>Artistvert</option>
           <option>Bartender</option>
-          <option>Host</option>
+          <option>Booking</option>
+          <option>Catering</option>
+          <option>Design</option>
           <option>DJ</option>
-          <option>Lighting</option>
-          <option>Sound</option>
-          <option>IT</option>
-          <option>Maintenance</option>
+          <option>Foto</option>
+          <option>IT-utvikler</option>
+          <option>Materialforvalter</option>
+          <option>Plakat</option>
+          <option>Redaksjon</option>
+          <option>SoMe</option>
+          <option>Stagecrew</option>
+          <option>Vert</option>
+          <option>Styret</option>
         </select>
+
+        <label htmlFor="active">Active</label>
+        <input id="active" type="checkbox" defaultChecked />
+        <label htmlFor="active">Inactive</label>
+        <input id="inactive" type="checkbox" />
 
         <label htmlFor="search">Search</label>
         <input type="text" id="search" placeholder="Search by name, email, role..." />
       </form>
-      Filters here
     </section>
   )
 }
