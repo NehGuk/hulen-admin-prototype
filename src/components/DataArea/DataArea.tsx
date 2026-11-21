@@ -15,11 +15,6 @@ export default function DataArea() {
 
   return (
     <>
-      <select value={role} onChange={(e) => setRole(e.target.value)}>
-        <option value="All roles">All roles</option>
-        <option value="Styret">Styret</option>
-        <option value="Bartender">Bartender</option>
-      </select>
       <Filters role={role} onRoleChange={setRole} />
       <Table members={visible} />
     </>

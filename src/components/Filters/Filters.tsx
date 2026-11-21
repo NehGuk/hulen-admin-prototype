@@ -1,4 +1,5 @@
-/* import { ROLES } from "../../types/types" */
+import { ROLES } from "../../types/types"
+
 import type { RoleFilter } from "../../types/types"
 
 type FiltersProps = {
@@ -10,7 +11,14 @@ export default function Filters({ role, onRoleChange }: FiltersProps) {
   return (
     <section>
       <form>
-        <label htmlFor="choosePeriod">Semester</label>
+        <select value={role} onChange={(e) => onRoleChange(e.target.value)}>
+          {ROLES.map((role) => (
+            <option key={role} value={role}>
+              {role}
+            </option>
+          ))}
+        </select>
+        {/* <label htmlFor="choosePeriod">Semester</label>
         <select id="choosePeriod" defaultValue="2026 2">
           <option>2026 2</option>
           <option>2026 1</option>
@@ -48,7 +56,7 @@ export default function Filters({ role, onRoleChange }: FiltersProps) {
         <input id="inactive" type="checkbox" />
 
         <label htmlFor="search">Search</label>
-        <input type="text" id="search" placeholder="Search by name, email, role..." />
+        <input type="text" id="search" placeholder="Search by name, email, role..." /> */}
       </form>
     </section>
   )
