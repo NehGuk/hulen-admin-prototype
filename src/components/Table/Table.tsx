@@ -5,13 +5,9 @@ type TableProps = {
 }
 
 export default function Table({ members }: TableProps) {
-  const rolesInUse = [...new Set(members.map((m) => m.current_role).filter((role) => role !== null))].sort((a, b) =>
-    a.localeCompare(b, "nb")
-  )
-  /* console.log(rolesInUse) */
   const sortedMembers: Member[] = [...members].sort((a, b) => {
-    const roleA = a.current_role
-    const roleB = b.current_role
+    const roleA = a.roles[0].role
+    const roleB = b.roles[0].role
     if (roleA === roleB) return a.full_name.localeCompare(b.full_name, "nb")
     if (roleA === null) return 1
     if (roleB === null) return -1
@@ -36,7 +32,7 @@ export default function Table({ members }: TableProps) {
         <tbody>
           {sortedMembers.map((m) => (
             <tr key={m.email}>
-              <td>{m.current_role}</td>
+              <td>{m.roles[0].role}</td>
               <td>{m.full_name}</td>
               <td>{m.email}</td>
               <td>{m.phone_number}</td>

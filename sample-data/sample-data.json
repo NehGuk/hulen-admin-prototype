@@ -12,12 +12,9 @@
     "contract_path": "https://www.blablabla.no/example65769355962",
     "is_call_attendant": true,
     "is_team_leader": false,
-    "current_role": "SoMe",
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "Artistvert"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "SoMe" },
+      { "period": "2025_1", "role": "Artistvert" }
     ],
     "points": 33,
     "dugnads": ["2026_autumn", "2025_autumn"],
@@ -37,8 +34,10 @@
     "contract_path": "https://www.blablabla.no/example53295618879",
     "is_call_attendant": false,
     "is_team_leader": true,
-    "current_role": "Catering",
-    "previous_roles": [],
+    "roles": [
+      { "period": "2026_2", "role": "Catering" },
+      { "period": "2025_1", "role": "Catering" }
+    ],
     "points": 37,
     "dugnads": ["2025_autumn"],
     "next_of_kin_full_name": "Kari Solberg",
@@ -57,20 +56,10 @@
     "contract_path": "https://www.blablabla.no/example47829028868",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "DJ"
-      },
-      {
-        "period": "2025_1",
-        "role": "DJ"
-      },
-      {
-        "period": "2024_1",
-        "role": "IT-utvikler"
-      }
+    "roles": [
+      { "period": "2026_1", "role": "DJ" },
+      { "period": "2025_1", "role": "DJ" },
+      { "period": "2024_1", "role": "IT-utvikler" }
     ],
     "points": 6,
     "dugnads": [],
@@ -90,12 +79,9 @@
     "contract_path": "https://www.blablabla.no/example30222629416",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Styret",
-    "previous_roles": [
-      {
-        "period": "2025_2",
-        "role": "Plakat"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Styret" },
+      { "period": "2025_2", "role": "Plakat" }
     ],
     "points": 19,
     "dugnads": [],
@@ -115,20 +101,10 @@
     "contract_path": "https://www.blablabla.no/example53706802333",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "IT-utvikler"
-      },
-      {
-        "period": "2024_2",
-        "role": "Design"
-      },
-      {
-        "period": "2023_2",
-        "role": "Bartender"
-      }
+    "roles": [
+      { "period": "2026_1", "role": "IT-utvikler" },
+      { "period": "2024_2", "role": "Design" },
+      { "period": "2023_2", "role": "Bartender" }
     ],
     "points": 22,
     "dugnads": ["2025_autumn"],
@@ -148,20 +124,11 @@
     "contract_path": "https://www.blablabla.no/example02724241873",
     "is_call_attendant": false,
     "is_team_leader": true,
-    "current_role": "Bartender",
-    "previous_roles": [
-      {
-        "period": "2025_2",
-        "role": "Styret"
-      },
-      {
-        "period": "2024_1",
-        "role": "Vert"
-      },
-      {
-        "period": "2023_1",
-        "role": "IT-utvikler"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Bartender" },
+      { "period": "2025_2", "role": "Styret" },
+      { "period": "2024_1", "role": "Vert" },
+      { "period": "2023_1", "role": "IT-utvikler" }
     ],
     "points": 17,
     "dugnads": ["2024_autumn"],
@@ -181,12 +148,9 @@
     "contract_path": "https://www.blablabla.no/example34479113980",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Stagecrew",
-    "previous_roles": [
-      {
-        "period": "2024_2",
-        "role": "Catering"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Stagecrew" },
+      { "period": "2024_2", "role": "Catering" }
     ],
     "points": 12,
     "dugnads": [],
@@ -206,16 +170,9 @@
     "contract_path": null,
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "IT-utvikler"
-      },
-      {
-        "period": "2024_2",
-        "role": "Artistvert"
-      }
+    "roles": [
+      { "period": "2025_1", "role": "IT-utvikler" },
+      { "period": "2024_2", "role": "Artistvert" }
     ],
     "points": 42,
     "dugnads": ["2025_spring"],
@@ -235,16 +192,9 @@
     "contract_path": "https://www.blablabla.no/example37914765120",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "Materialforvalter"
-      },
-      {
-        "period": "2023_2",
-        "role": "IT-utvikler"
-      }
+    "roles": [
+      { "period": "2025_1", "role": "Materialforvalter" },
+      { "period": "2023_2", "role": "IT-utvikler" }
     ],
     "points": 18,
     "dugnads": ["2025_spring", "2024_spring"],
@@ -264,16 +214,10 @@
     "contract_path": "https://www.blablabla.no/example76956205874",
     "is_call_attendant": true,
     "is_team_leader": false,
-    "current_role": "Catering",
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "Foto"
-      },
-      {
-        "period": "2023_1",
-        "role": "Styret"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Catering" },
+      { "period": "2026_1", "role": "Foto" },
+      { "period": "2023_1", "role": "Styret" }
     ],
     "points": 31,
     "dugnads": [],
@@ -293,16 +237,9 @@
     "contract_path": "https://www.blablabla.no/example56462774331",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "SoMe"
-      },
-      {
-        "period": "2024_1",
-        "role": "Booking"
-      }
+    "roles": [
+      { "period": "2025_1", "role": "SoMe" },
+      { "period": "2024_1", "role": "Booking" }
     ],
     "points": 57,
     "dugnads": ["2024_spring"],
@@ -322,16 +259,10 @@
     "contract_path": "https://www.blablabla.no/example63976862932",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Styret",
-    "previous_roles": [
-      {
-        "period": "2024_2",
-        "role": "Materialforvalter"
-      },
-      {
-        "period": "2024_1",
-        "role": "SoMe"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Styret" },
+      { "period": "2024_2", "role": "Materialforvalter" },
+      { "period": "2024_1", "role": "SoMe" }
     ],
     "points": 9,
     "dugnads": ["2026_spring", "2025_autumn", "2024_spring"],
@@ -351,8 +282,7 @@
     "contract_path": "https://www.blablabla.no/example88472394513",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Bartender",
-    "previous_roles": [],
+    "roles": [{ "period": "2026_2", "role": "Bartender" }],
     "points": 24,
     "dugnads": ["2026_autumn", "2025_spring"],
     "next_of_kin_full_name": "Martin Brekke",
@@ -371,12 +301,9 @@
     "contract_path": null,
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Foto",
-    "previous_roles": [
-      {
-        "period": "2023_1",
-        "role": "Artistvert"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Foto" },
+      { "period": "2023_1", "role": "Artistvert" }
     ],
     "points": 12,
     "dugnads": ["2025_autumn"],
@@ -396,13 +323,7 @@
     "contract_path": "https://www.blablabla.no/example62295657026",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "SoMe"
-      }
-    ],
+    "roles": [{ "period": "2026_1", "role": "SoMe" }],
     "points": 36,
     "dugnads": [],
     "next_of_kin_full_name": null,
@@ -421,20 +342,11 @@
     "contract_path": "https://www.blablabla.no/example90697945598",
     "is_call_attendant": true,
     "is_team_leader": false,
-    "current_role": "Design",
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "Bartender"
-      },
-      {
-        "period": "2025_2",
-        "role": "Vert"
-      },
-      {
-        "period": "2024_1",
-        "role": "Booking"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Design" },
+      { "period": "2026_1", "role": "Bartender" },
+      { "period": "2025_2", "role": "Vert" },
+      { "period": "2024_1", "role": "Booking" }
     ],
     "points": 5,
     "dugnads": ["2025_spring", "2024_autumn"],
@@ -454,16 +366,10 @@
     "contract_path": "https://www.blablabla.no/example21663196818",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Booking",
-    "previous_roles": [
-      {
-        "period": "2024_1",
-        "role": "Redaksjon"
-      },
-      {
-        "period": "2023_1",
-        "role": "Booking"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Booking" },
+      { "period": "2024_1", "role": "Redaksjon" },
+      { "period": "2023_1", "role": "Booking" }
     ],
     "points": 48,
     "dugnads": ["2025_autumn", "2024_spring"],
@@ -483,8 +389,7 @@
     "contract_path": null,
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "IT-utvikler",
-    "previous_roles": [],
+    "roles": [{ "period": "2026_2", "role": "IT-utvikler" }],
     "points": 15,
     "dugnads": ["2024_spring"],
     "next_of_kin_full_name": null,
@@ -503,16 +408,10 @@
     "contract_path": "https://www.blablabla.no/example86859207781",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Plakat",
-    "previous_roles": [
-      {
-        "period": "2023_2",
-        "role": "SoMe"
-      },
-      {
-        "period": "2023_1",
-        "role": "Styret"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Plakat" },
+      { "period": "2023_2", "role": "SoMe" },
+      { "period": "2023_1", "role": "Styret" }
     ],
     "points": 27,
     "dugnads": ["2024_spring"],
@@ -532,16 +431,10 @@
     "contract_path": "https://www.blablabla.no/example48081414916",
     "is_call_attendant": true,
     "is_team_leader": true,
-    "current_role": "Foto",
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "Foto"
-      },
-      {
-        "period": "2023_2",
-        "role": "Bartender"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Foto" },
+      { "period": "2026_1", "role": "Foto" },
+      { "period": "2023_2", "role": "Bartender" }
     ],
     "points": 3,
     "dugnads": ["2026_autumn", "2024_autumn"],
@@ -561,16 +454,10 @@
     "contract_path": "https://www.blablabla.no/example91365621579",
     "is_call_attendant": true,
     "is_team_leader": false,
-    "current_role": "SoMe",
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "Bartender"
-      },
-      {
-        "period": "2023_2",
-        "role": "DJ"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "SoMe" },
+      { "period": "2025_1", "role": "Bartender" },
+      { "period": "2023_2", "role": "DJ" }
     ],
     "points": 3,
     "dugnads": ["2026_spring", "2025_spring"],
@@ -590,16 +477,10 @@
     "contract_path": null,
     "is_call_attendant": false,
     "is_team_leader": true,
-    "current_role": "Booking",
-    "previous_roles": [
-      {
-        "period": "2024_1",
-        "role": "Redaksjon"
-      },
-      {
-        "period": "2023_1",
-        "role": "Stagecrew"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Booking" },
+      { "period": "2024_1", "role": "Redaksjon" },
+      { "period": "2023_1", "role": "Stagecrew" }
     ],
     "points": 53,
     "dugnads": [],
@@ -619,20 +500,11 @@
     "contract_path": "https://www.blablabla.no/example08692622178",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Vert",
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "Materialforvalter"
-      },
-      {
-        "period": "2023_2",
-        "role": "Stagecrew"
-      },
-      {
-        "period": "2023_1",
-        "role": "Redaksjon"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Vert" },
+      { "period": "2026_1", "role": "Materialforvalter" },
+      { "period": "2023_2", "role": "Stagecrew" },
+      { "period": "2023_1", "role": "Redaksjon" }
     ],
     "points": 47,
     "dugnads": ["2026_autumn", "2024_spring"],
@@ -652,16 +524,10 @@
     "contract_path": "https://www.blablabla.no/example21868891898",
     "is_call_attendant": true,
     "is_team_leader": true,
-    "current_role": "Stagecrew",
-    "previous_roles": [
-      {
-        "period": "2024_2",
-        "role": "Plakat"
-      },
-      {
-        "period": "2024_1",
-        "role": "Foto"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Stagecrew" },
+      { "period": "2024_2", "role": "Plakat" },
+      { "period": "2024_1", "role": "Foto" }
     ],
     "points": 13,
     "dugnads": ["2026_autumn", "2024_autumn", "2024_spring"],
@@ -681,16 +547,10 @@
     "contract_path": "https://www.blablabla.no/example04256235501",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Styret",
-    "previous_roles": [
-      {
-        "period": "2024_2",
-        "role": "Foto"
-      },
-      {
-        "period": "2024_1",
-        "role": "Plakat"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Styret" },
+      { "period": "2024_2", "role": "Foto" },
+      { "period": "2024_1", "role": "Plakat" }
     ],
     "points": 39,
     "dugnads": ["2026_autumn"],
@@ -710,13 +570,7 @@
     "contract_path": "https://www.blablabla.no/example17328035360",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "Foto"
-      }
-    ],
+    "roles": [{ "period": "2025_1", "role": "Foto" }],
     "points": 50,
     "dugnads": [],
     "next_of_kin_full_name": "Ola Gjerde",
@@ -735,16 +589,10 @@
     "contract_path": null,
     "is_call_attendant": false,
     "is_team_leader": true,
-    "current_role": "Artistvert",
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "Catering"
-      },
-      {
-        "period": "2024_2",
-        "role": "Booking"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Artistvert" },
+      { "period": "2025_1", "role": "Catering" },
+      { "period": "2024_2", "role": "Booking" }
     ],
     "points": 12,
     "dugnads": ["2026_autumn"],
@@ -764,16 +612,9 @@
     "contract_path": null,
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "SoMe"
-      },
-      {
-        "period": "2023_2",
-        "role": "Catering"
-      }
+    "roles": [
+      { "period": "2026_1", "role": "SoMe" },
+      { "period": "2023_2", "role": "Catering" }
     ],
     "points": 10,
     "dugnads": ["2024_spring"],
@@ -793,12 +634,9 @@
     "contract_path": "https://www.blablabla.no/example86461677582",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Artistvert",
-    "previous_roles": [
-      {
-        "period": "2024_1",
-        "role": "SoMe"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Artistvert" },
+      { "period": "2024_1", "role": "SoMe" }
     ],
     "points": 49,
     "dugnads": ["2025_autumn"],
@@ -818,12 +656,9 @@
     "contract_path": "https://www.blablabla.no/example72026798919",
     "is_call_attendant": true,
     "is_team_leader": false,
-    "current_role": "Bartender",
-    "previous_roles": [
-      {
-        "period": "2024_1",
-        "role": "SoMe"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Bartender" },
+      { "period": "2024_1", "role": "SoMe" }
     ],
     "points": 15,
     "dugnads": ["2024_autumn", "2024_spring"],
@@ -843,8 +678,7 @@
     "contract_path": "https://www.blablabla.no/example45393944037",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Materialforvalter",
-    "previous_roles": [],
+    "roles": [{ "period": "2026_2", "role": "Materialforvalter" }],
     "points": 48,
     "dugnads": ["2026_autumn", "2024_spring"],
     "next_of_kin_full_name": "Anne Lunde",
@@ -863,16 +697,9 @@
     "contract_path": "https://www.blablabla.no/example17712668194",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "Artistvert"
-      },
-      {
-        "period": "2024_2",
-        "role": "DJ"
-      }
+    "roles": [
+      { "period": "2026_1", "role": "Artistvert" },
+      { "period": "2024_2", "role": "DJ" }
     ],
     "points": 34,
     "dugnads": ["2025_spring"],
@@ -892,16 +719,10 @@
     "contract_path": "https://www.blablabla.no/example01519051595",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Styret",
-    "previous_roles": [
-      {
-        "period": "2023_2",
-        "role": "Plakat"
-      },
-      {
-        "period": "2023_1",
-        "role": "Bartender"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Styret" },
+      { "period": "2023_2", "role": "Plakat" },
+      { "period": "2023_1", "role": "Bartender" }
     ],
     "points": 37,
     "dugnads": ["2025_autumn", "2024_autumn", "2024_spring"],
@@ -921,8 +742,7 @@
     "contract_path": "https://www.blablabla.no/example00821787406",
     "is_call_attendant": false,
     "is_team_leader": true,
-    "current_role": "Vert",
-    "previous_roles": [],
+    "roles": [{ "period": "2026_2", "role": "Vert" }],
     "points": 35,
     "dugnads": ["2026_autumn", "2024_spring"],
     "next_of_kin_full_name": "Arne Nygård",
@@ -941,16 +761,10 @@
     "contract_path": "https://www.blablabla.no/example67333156340",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "DJ",
-    "previous_roles": [
-      {
-        "period": "2025_2",
-        "role": "Artistvert"
-      },
-      {
-        "period": "2024_1",
-        "role": "Styret"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "DJ" },
+      { "period": "2025_2", "role": "Artistvert" },
+      { "period": "2024_1", "role": "Styret" }
     ],
     "points": 36,
     "dugnads": ["2024_autumn"],
@@ -970,16 +784,10 @@
     "contract_path": "https://www.blablabla.no/example22220096377",
     "is_call_attendant": true,
     "is_team_leader": false,
-    "current_role": "Styret",
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "Styret"
-      },
-      {
-        "period": "2023_1",
-        "role": "Design"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Styret" },
+      { "period": "2026_1", "role": "Styret" },
+      { "period": "2023_1", "role": "Design" }
     ],
     "points": 15,
     "dugnads": ["2024_autumn", "2024_spring"],
@@ -999,20 +807,11 @@
     "contract_path": "https://www.blablabla.no/example31233962327",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": "Redaksjon",
-    "previous_roles": [
-      {
-        "period": "2026_1",
-        "role": "Redaksjon"
-      },
-      {
-        "period": "2025_1",
-        "role": "Plakat"
-      },
-      {
-        "period": "2023_2",
-        "role": "Bartender"
-      }
+    "roles": [
+      { "period": "2026_2", "role": "Redaksjon" },
+      { "period": "2026_1", "role": "Redaksjon" },
+      { "period": "2025_1", "role": "Plakat" },
+      { "period": "2023_2", "role": "Bartender" }
     ],
     "points": 24,
     "dugnads": ["2025_autumn"],
@@ -1032,8 +831,7 @@
     "contract_path": "https://www.blablabla.no/example53086594774",
     "is_call_attendant": false,
     "is_team_leader": true,
-    "current_role": "Design",
-    "previous_roles": [],
+    "roles": [{ "period": "2026_2", "role": "Design" }],
     "points": 23,
     "dugnads": [],
     "next_of_kin_full_name": null,
@@ -1052,8 +850,7 @@
     "contract_path": "https://www.blablabla.no/example99226455436",
     "is_call_attendant": false,
     "is_team_leader": true,
-    "current_role": "Redaksjon",
-    "previous_roles": [],
+    "roles": [{ "period": "2026_2", "role": "Redaksjon" }],
     "points": 13,
     "dugnads": ["2026_autumn", "2025_spring"],
     "next_of_kin_full_name": "Arne Romero",
@@ -1072,13 +869,7 @@
     "contract_path": "https://www.blablabla.no/example22833638954",
     "is_call_attendant": false,
     "is_team_leader": false,
-    "current_role": null,
-    "previous_roles": [
-      {
-        "period": "2025_1",
-        "role": "Booking"
-      }
-    ],
+    "roles": [{ "period": "2025_1", "role": "Booking" }],
     "points": 13,
     "dugnads": ["2025_spring", "2024_spring"],
     "next_of_kin_full_name": "Arne Ulvik",

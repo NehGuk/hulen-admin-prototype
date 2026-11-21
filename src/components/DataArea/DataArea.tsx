@@ -8,7 +8,7 @@ export default function DataArea() {
   const [role, setRole] = useState<RoleFilter>("All roles")
   console.log(role)
   const [members, setMembers] = useState<Member[]>([])
-  const visible = members.filter((m) => role === "All roles" || m.current_role === role)
+  const visible = members.filter((m) => role === "All roles" || m.roles[0].role === role)
   useEffect(() => {
     getMembers().then(setMembers)
   }, [])

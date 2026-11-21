@@ -17,7 +17,7 @@ export const ROLES = [
   "Styret",
 ] as const
 
-export type RoleName = (typeof ROLES)[number]
+export type RoleName = Exclude<(typeof ROLES)[number], "All roles">
 
 export type RoleFilter = RoleName | "All roles"
 
@@ -27,7 +27,7 @@ export type DugnadSemester = `${number}_${SemesterName}`
 
 export type Period = `${number}_${1 | 2}`
 
-export type PreviousRole = {
+export type Role = {
   period: Period
   role: RoleName
 }
@@ -38,17 +38,16 @@ export type Member = {
   phone_number: string
   address_line_1: string
   address_line_2: string | null
-  postal_code: string // string, not number: Norwegian codes can start with 0
+  postal_code: string
   city: string
-  date_of_birth: string // ISO date, YYYY-MM-DD
+  date_of_birth: string
   active_contract: boolean
   contract_path: string | null
   is_call_attendant: boolean
   is_team_leader: boolean
-  current_role: RoleName | null // null = no role this semester
-  previous_roles: PreviousRole[] // newest first
+  roles: Role[] // newest first
   points: number
-  dugnads: DugnadSemester[] // newest first
+  dugnads: DugnadSemester[]
   next_of_kin_full_name: string | null
   next_of_kin_phone_number: string | null
 }
