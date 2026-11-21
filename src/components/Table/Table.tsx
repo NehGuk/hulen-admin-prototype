@@ -8,7 +8,7 @@ export default function Table({ members }: TableProps) {
   const rolesInUse = [...new Set(members.map((m) => m.current_role).filter((role) => role !== null))].sort((a, b) =>
     a.localeCompare(b, "nb")
   )
-  console.log(rolesInUse)
+  /* console.log(rolesInUse) */
   const sortedMembers: Member[] = [...members].sort((a, b) => {
     const roleA = a.current_role
     const roleB = b.current_role

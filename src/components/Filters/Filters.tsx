@@ -1,10 +1,12 @@
-import type { Member } from "../../types/types"
-type FilterProps = {
-  members: Member[]
+/* import { ROLES } from "../../types/types" */
+import type { RoleFilter } from "../../types/types"
+
+type FiltersProps = {
+  role: RoleFilter
+  onRoleChange: (role: RoleFilter) => void
 }
 
-export default function Filters({ members }: FilterProps) {
-  console.log(members)
+export default function Filters({ role, onRoleChange }: FiltersProps) {
   return (
     <section>
       <form>

@@ -1,4 +1,5 @@
 export const ROLES = [
+  "All roles",
   "Artistvert",
   "Bartender",
   "Booking",
@@ -17,6 +18,8 @@ export const ROLES = [
 ] as const
 
 export type RoleName = (typeof ROLES)[number]
+
+export type RoleFilter = RoleName | "All roles"
 
 export type SemesterName = "spring" | "autumn"
 
