@@ -16,38 +16,38 @@ export default function Table({ rows }: TableProps) {
 
   return (
     <div className="w-full overflow-x-auto">
-      <table className="w-full min-w-max text-left">
+      <table className="w-full min-w-300 text-left">
         <thead>
           <tr className="text-left">
-            <th className="pr-4">Role</th>
-            <th className="pr-4">Semester</th>
-            <th className="pr-4">Name</th>
-            <th className="pr-4">Email</th>
-            <th className="pr-4">Phone</th>
-            <th className="pr-4">Team leader</th>
-            <th className="pr-4">Active contract</th>
-            <th className="pr-4">Contract PDF</th>
-            <th className="pr-4">Points</th>
-            <th className="pr-4">Dugnads</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Role</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Semester</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Name</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Email</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Phone</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Team leader</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Active contract</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Contract</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Points</th>
+            <th className="pl-3 pr-5 whitespace-nowrap">Dugnads</th>
           </tr>
         </thead>
         <tbody>
           {sortedRows.map(({ member: m, role: r }) => (
             <tr key={`${m.email}-${r.period}-${r.role}`} className="hover:bg-white/5">
-              <td>{r.role}</td>
-              <td>{formatPeriod(r.period)}</td>
-              <td>{m.full_name}</td>
-              <td>{m.email}</td>
-              <td>{m.phone_number}</td>
-              <td>{m.is_team_leader && "Yep"}</td>
-              <td>{m.active_contract ? "Yep" : "Nope"}</td>
-              <td>
+              <td className="pl-3 pl-3 pr-5 whitespace-nowrap">{r.role}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{formatPeriod(r.period)}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{m.full_name}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{m.email}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{m.phone_number}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{m.is_team_leader && "Yep"}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{m.active_contract ? "Yep" : "Nope"}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">
                 <a href="./../../../sample-contract-models/contract-sample.pdf" target="_blank">
-                  Go
+                  PDF
                 </a>
               </td>
-              <td>{m.points}</td>
-              <td>{m.dugnads.length}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{m.points}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap">{m.dugnads.length}</td>
             </tr>
           ))}
         </tbody>
