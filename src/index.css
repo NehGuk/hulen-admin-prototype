@@ -1,12 +1,15 @@
 /* No styling yet */
 
 @import "tailwindcss";
+@import "@fontsource/bebas-neue";
+@import "@fontsource/abel";
 
 @theme {
   --color-background: #202124;
   --color-hulen-yellow: #ffd000;
   --color-white: #ececec;
-  --font-sans: "Inter", sans-serif;
+  --font-hulen: "Bebas Neue", sans-serif;
+  --font-sans: "Abel", sans-serif;
 }
 
 @layer base {
@@ -14,6 +17,9 @@
     @apply bg-background text-white font-sans antialiased;
   }
 
+  h1 {
+    @apply font-hulen;
+  }
   button {
     @apply cursor-pointer;
   }
