@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <>
-      <p>Footer</p>
-    </>
+    <section className="p-3">
+      <p>Hulen | 2026</p>
+    </section>
   )
 }

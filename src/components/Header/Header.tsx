@@ -6,8 +6,10 @@ type HeaderProps = {
 
 export default function Header({ isLoggedIn, onLogout }: HeaderProps) {
   return (
-    <header className="flex items-center justify-between">
-      <h1>HulenAdmin</h1>
+    <header className="flex items-center justify-between p-3">
+      <h1>
+        <span className="text-hulen-yellow">Hulen</span> Admin
+      </h1>
       {isLoggedIn && <button onClick={onLogout}>Log out</button>}
     </header>
   )

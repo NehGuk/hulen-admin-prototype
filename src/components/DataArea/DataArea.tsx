@@ -21,9 +21,9 @@ export default function DataArea() {
   )
 
   return (
-    <>
+    <section className="p-3">
       <Filters role={role} onRoleChange={setRole} semester={semester} onSemesterChange={setSemester} />
       <Table rows={rows} />
-    </>
+    </section>
   )
 }

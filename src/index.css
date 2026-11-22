@@ -10,15 +10,18 @@
   --color-white: #ececec;
   --font-hulen: "Bebas Neue", sans-serif;
   --font-sans: "Abel", sans-serif;
+  --text-big: 2rem;
+  --text-normal: 1.2rem;
+  --text-small: 0.875rem;
 }
 
 @layer base {
   body {
-    @apply bg-background text-white font-sans antialiased;
+    @apply bg-background text-white font-sans antialiased text-normal;
   }
 
   h1 {
-    @apply font-hulen;
+    @apply font-hulen text-big;
   }
   button {
     @apply cursor-pointer;
