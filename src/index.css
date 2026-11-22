@@ -3,44 +3,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Backgrounds */
-
   --color-background: #202124;
-
-  --color-surface: #2b2d31;
-
-  --color-surface-elevated: #36383d;
-
-  /* Brand */
-
-  --color-primary: #ffb000;
-
-  --color-primary-hover: #ffc233;
-
-  /* Typography */
-
-  --color-text: #f5f3ec;
-
-  --color-muted: #b8bbc2;
-
-  /* Borders */
-
-  --color-border: #45474d;
-
-  /* Status */
-
-  --color-success: #65c18c;
-
-  --color-error: #ff6b6b;
-
-  /* Typography */
-
+  --color-hulen-yellow: #ffd000;
+  --color-white: #ececec;
   --font-sans: "Inter", sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-background text-text font-sans antialiased;
+    @apply bg-background text-white font-sans antialiased;
   }
 
   button {
