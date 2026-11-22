@@ -54,7 +54,9 @@ export default function Table({ rows }: TableProps) {
                   <FileText
                     size={18}
                     strokeWidth={1}
-                    className={m.active_contract ? "text-white hover:text-deep-yellow" : "text-white/50 hover:text-deep-yellow"}
+                    className={`hover:scale-110 ${
+                      m.active_contract ? "text-white hover:text-deep-yellow" : "text-white/50 hover:text-deep-yellow"
+                    }`}
                   />
                 </a>
               </td>
