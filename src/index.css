@@ -36,6 +36,6 @@
   }
 
   tr {
-    @apply transition-colors duration-200 ease-in-out;
+    @apply transition-colors duration-1000 ease-out;
   }
 }
