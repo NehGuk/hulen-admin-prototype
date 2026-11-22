@@ -14,13 +14,17 @@ To build a simple front-end that reads data from a database. For now, I'm using 
 - TypeScript
 - TailwindCSS
 
-## Design concepts
+## Design elements
 
 ### Colour palette
 
-Based on the same yellow used in Hulen.no, I've created this WCAG AA-compliant colour palette. It should cover the project's basic needs. The red-ish shade is just for error messages. Us it carefully.
+Based on the same yellow used in Hulen.no, I've created this WCAG AA-compliant colour palette. It should cover the project's basic needs. The reddish shade is just for error messages. Use it sparingly.
 
 ![Colour palette](./src/assets/colour-palette.png)
+
+### Typography
+
+For headers, I'm using Bebas Neue and for body text I'm using Abel.
 
 ## Running it locally
 
