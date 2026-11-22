@@ -1,5 +1,5 @@
 import type { MemberRow } from "../../types/types"
-
+import { formatPeriod } from "../../ultils/formatPeriod"
 type TableProps = {
   rows: MemberRow[]
 }
@@ -35,7 +35,7 @@ export default function Table({ rows }: TableProps) {
           {sortedRows.map(({ member: m, role: r }) => (
             <tr key={`${m.email}-${r.period}-${r.role}`} className="hover:bg-white/5">
               <td>{r.role}</td>
-              <td>{r.period}</td>
+              <td>{formatPeriod(r.period)}</td>
               <td>{m.full_name}</td>
               <td>{m.email}</td>
               <td>{m.phone_number}</td>

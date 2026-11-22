@@ -1,5 +1,6 @@
 import { ROLES, SEMESTERS } from "../../types/types"
 import type { RoleFilter, SemesterFilter } from "../../types/types"
+import { formatPeriod } from "../../ultils/formatPeriod"
 
 type FiltersProps = {
   role: RoleFilter
@@ -29,7 +30,7 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
         <select id="semester" value={semester} onChange={(e) => onSemesterChange(e.target.value as SemesterFilter)}>
           {SEMESTERS.map((s) => (
             <option key={s} value={s}>
-              {s}
+              {formatPeriod(s)}
             </option>
           ))}
         </select>
