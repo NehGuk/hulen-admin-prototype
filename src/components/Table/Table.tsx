@@ -36,7 +36,7 @@ export default function Table({ rows }: TableProps) {
         <tbody>
           {sortedRows.map(({ member: m, role: r }) => (
             <tr key={`${m.email}-${r.period}-${r.role}`} className="border-b border-white/5 hover:bg-white/5">
-              <td className="pl-3 pr-5 whitespace-nowrap">{r.role}</td>
+              <td className="py-4 md:py-2 pl-3 pr-5 whitespace-nowrap">{r.role}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">{formatPeriod(r.period)}</td>
               <td className={`pl-3 pr-5 whitespace-nowrap ${m.is_team_leader ? "text-deep-yellow font-medium" : ""}`}>{m.full_name}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.email}</td>
