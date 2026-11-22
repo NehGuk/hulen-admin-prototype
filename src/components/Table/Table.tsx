@@ -1,5 +1,7 @@
 import type { MemberRow } from "../../types/types"
 import { formatPeriod } from "../../ultils/formatPeriod"
+import { Check, FileText } from "lucide-react"
+
 type TableProps = {
   rows: MemberRow[]
 }
@@ -39,11 +41,17 @@ export default function Table({ rows }: TableProps) {
               <td className={`pl-3 pr-5 whitespace-nowrap ${m.is_team_leader ? "text-deep-yellow font-medium" : ""}`}>{m.full_name}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.email}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.phone_number}</td>
-              <td className="pl-3 pr-5 whitespace-nowrap text-deep-yellow">{m.is_team_leader && "Yep"}</td>
+              <td className="pl-3 pr-5 whitespace-nowrap text-deep-yellow">
+                {m.is_team_leader && <Check size={20} className="text-deep-yellow" strokeWidth={1} />}
+              </td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.active_contract ? "Yep" : "Nope"}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">
                 <a href="./../../../sample-contract-models/contract-sample.pdf" target="_blank">
-                  PDF
+                  <FileText
+                    size={18}
+                    strokeWidth={1}
+                    className={m.active_contract ? "text-white hover:text-deep-yellow" : "text-white/50 hover:text-deep-yellow"}
+                  />
                 </a>
               </td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.points}</td>
