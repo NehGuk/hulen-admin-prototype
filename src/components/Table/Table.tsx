@@ -38,7 +38,11 @@ export default function Table({ rows }: TableProps) {
             <tr key={`${m.email}-${r.period}-${r.role}`} className="border-b border-white/5 hover:bg-white/5">
               <td className="py-4 md:py-2 pl-3 pr-5 whitespace-nowrap">{r.role}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">{formatPeriod(r.period)}</td>
-              <td className={`pl-3 pr-5 whitespace-nowrap ${m.is_team_leader ? "text-deep-yellow font-medium" : ""}`}>{m.full_name}</td>
+              <td
+                className={`pl-3 pr-5 whitespace-nowrap transition-transform duration-200 hover:scale-x-102 cursor-pointer ${m.is_team_leader ? "text-deep-yellow font-medium" : ""}`}
+              >
+                {m.full_name}
+              </td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.email}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.phone_number}</td>
               <td className="pl-3 pr-5 whitespace-nowrap text-deep-yellow">
