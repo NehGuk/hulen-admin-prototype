@@ -34,4 +34,8 @@
   th {
     @apply text-deep-yellow uppercase;
   }
+
+  tr {
+    @apply transition-colors duration-200 ease-in-out;
+  }
 }
