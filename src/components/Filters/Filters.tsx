@@ -11,7 +11,7 @@ type FiltersProps = {
 
 export default function Filters({ role, onRoleChange, semester, onSemesterChange }: FiltersProps) {
   return (
-    <section className="pb-6">
+    <section className="px-3 py-6">
       <form onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="role" className="sr-only">
           Role
