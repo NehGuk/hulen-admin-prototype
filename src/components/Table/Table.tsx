@@ -19,16 +19,16 @@ export default function Table({ rows }: TableProps) {
       <table className="w-full min-w-max text-left">
         <thead>
           <tr className="text-left">
-            <th>Role</th>
-            <th>Semester</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Team leader</th>
-            <th>Active contract</th>
-            <th>Contract PDF</th>
-            <th>Points</th>
-            <th>Dugnads</th>
+            <th className="pr-4">Role</th>
+            <th className="pr-4">Semester</th>
+            <th className="pr-4">Name</th>
+            <th className="pr-4">Email</th>
+            <th className="pr-4">Phone</th>
+            <th className="pr-4">Team leader</th>
+            <th className="pr-4">Active contract</th>
+            <th className="pr-4">Contract PDF</th>
+            <th className="pr-4">Points</th>
+            <th className="pr-4">Dugnads</th>
           </tr>
         </thead>
         <tbody>
