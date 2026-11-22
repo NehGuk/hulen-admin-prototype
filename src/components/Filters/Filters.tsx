@@ -1,63 +1,38 @@
-import { ROLES } from "../../types/types"
-
-import type { RoleFilter } from "../../types/types"
+import { ROLES, SEMESTERS } from "../../types/types"
+import type { RoleFilter, SemesterFilter } from "../../types/types"
 
 type FiltersProps = {
   role: RoleFilter
   onRoleChange: (role: RoleFilter) => void
+  semester: SemesterFilter
+  onSemesterChange: (semester: SemesterFilter) => void
 }
 
-export default function Filters({ role, onRoleChange }: FiltersProps) {
+export default function Filters({ role, onRoleChange, semester, onSemesterChange }: FiltersProps) {
   return (
     <section>
-      <form>
-        <select value={role} onChange={(e) => onRoleChange(e.target.value)}>
-          {ROLES.map((role) => (
-            <option key={role} value={role}>
-              {role}
+      <form onSubmit={(e) => e.preventDefault()}>
+        <label htmlFor="role">Role</label>
+        <select id="role" value={role} onChange={(e) => onRoleChange(e.target.value as RoleFilter)}>
+          {ROLES.map((r) => (
+            <option key={r} value={r}>
+              {r}
             </option>
           ))}
         </select>
-        <select></select>
 
-        {/* <label htmlFor="choosePeriod">Semester</label>
-        <select id="choosePeriod" defaultValue="2026 2">
-          <option>2026 2</option>
-          <option>2026 1</option>
-          <option>2025 2</option>
-          <option>2024 2</option>
-          <option>2024 1</option>
-          <option>2023 2</option>
-          <option>2023 1</option>
-          <option>All time</option>
+        <label htmlFor="semester">Semester</label>
+        <select id="semester" value={semester} onChange={(e) => onSemesterChange(e.target.value as SemesterFilter)}>
+          {SEMESTERS.map((s) => (
+            <option key={s} value={s}>
+              {s}
+            </option>
+          ))}
         </select>
 
-        <label htmlFor="chooseRole">Role</label>
-        <select id="chooseRole" defaultValue="All roles">
-          <option>Artistvert</option>
-          <option>Bartender</option>
-          <option>Booking</option>
-          <option>Catering</option>
-          <option>Design</option>
-          <option>DJ</option>
-          <option>Foto</option>
-          <option>IT-utvikler</option>
-          <option>Materialforvalter</option>
-          <option>Plakat</option>
-          <option>Redaksjon</option>
-          <option>SoMe</option>
-          <option>Stagecrew</option>
-          <option>Vert</option>
-          <option>Styret</option>
-          <option>All roles</option>
-        </select>
+        {/* Implement a search field here later */}
 
-        <label htmlFor="active">Active</label>
-        <input id="active" type="checkbox" defaultChecked />
-        <label htmlFor="active">Inactive</label>
-        <input id="inactive" type="checkbox" />
-
-        <label htmlFor="search">Search</label>
+        {/* <label htmlFor="search"></label>
         <input type="text" id="search" placeholder="Search by name, email, role..." /> */}
       </form>
     </section>

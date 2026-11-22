@@ -1,24 +1,26 @@
-import type { Member } from "../../types/types"
+import type { MemberRow } from "../../types/types"
 
 type TableProps = {
-  members: Member[]
+  rows: MemberRow[]
 }
 
-export default function Table({ members }: TableProps) {
-  const sortedMembers: Member[] = [...members].sort((a, b) => {
-    const roleA = a.roles[0].role
-    const roleB = b.roles[0].role
-    if (roleA === roleB) return a.full_name.localeCompare(b.full_name, "nb")
-    if (roleA === null) return 1
-    if (roleB === null) return -1
-    return roleA.localeCompare(roleB, "nb")
-  })
+export default function Table({ rows }: TableProps) {
+  if (rows.length === 0) return <p>Oops, no matches for these filters!</p>
+
+  const sortedRows = [...rows].sort(
+    (a, b) =>
+      a.role.role.localeCompare(b.role.role, "nb") ||
+      a.member.full_name.localeCompare(b.member.full_name, "nb") ||
+      b.role.period.localeCompare(a.role.period)
+  )
+
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full min-w-max">
         <thead>
           <tr className="text-left">
             <th>Role</th>
+            <th>Semester</th>
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
@@ -30,9 +32,10 @@ export default function Table({ members }: TableProps) {
           </tr>
         </thead>
         <tbody>
-          {sortedMembers.map((m) => (
-            <tr key={m.email}>
-              <td>{m.roles[0].role}</td>
+          {sortedRows.map(({ member: m, role: r }) => (
+            <tr key={`${m.email}-${r.period}-${r.role}`}>
+              <td>{r.role}</td>
+              <td>{r.period}</td>
               <td>{m.full_name}</td>
               <td>{m.email}</td>
               <td>{m.phone_number}</td>
