@@ -12,6 +12,11 @@ To build a simple front-end that reads data from a database. For now, I'm using 
 
 - React
 - TypeScript
+- TailwindCSS
+
+## Running it locally
+
+Assuming you have NodeJS installed, just clone the repo and install its dependencies:
 
 ```shell
 git clone <repo-url>
