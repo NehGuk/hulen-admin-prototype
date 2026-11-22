@@ -20,17 +20,17 @@ export default function Table({ rows }: TableProps) {
     <div className="w-full overflow-x-auto">
       <table className="w-full min-w-300 text-left">
         <thead>
-          <tr className="text-left">
-            <th className="pl-3 pr-5 whitespace-nowrap">Role</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Semester</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Name</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Email</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Phone</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Team leader</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Active contract</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Contract</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Points</th>
-            <th className="pl-3 pr-5 whitespace-nowrap">Dugnad</th>
+          <tr className="text-left border-t-4 border-deep-yellow/30">
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Role</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Semester</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Name</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Email</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Phone</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Team leader</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Active contract</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Contract</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Points</th>
+            <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Dugnad</th>
           </tr>
         </thead>
         <tbody>
@@ -54,9 +54,7 @@ export default function Table({ rows }: TableProps) {
                   <FileText
                     size={18}
                     strokeWidth={1}
-                    className={`hover:scale-110 ${
-                      m.active_contract ? "text-white hover:text-deep-yellow" : "text-white/50 hover:text-deep-yellow"
-                    }`}
+                    className={`${m.active_contract ? "text-white hover:text-deep-yellow" : "text-white/50 hover:text-deep-yellow"}`}
                   />
                 </a>
               </td>
