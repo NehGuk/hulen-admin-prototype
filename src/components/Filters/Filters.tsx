@@ -12,7 +12,9 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
   return (
     <section>
       <form onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="role">Role</label>
+        <label htmlFor="role" className="sr-only">
+          Role
+        </label>
         <select id="role" value={role} onChange={(e) => onRoleChange(e.target.value as RoleFilter)}>
           {ROLES.map((r) => (
             <option key={r} value={r}>
@@ -21,7 +23,9 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
           ))}
         </select>
 
-        <label htmlFor="semester">Semester</label>
+        <label htmlFor="semester" className="sr-only">
+          Semester
+        </label>
         <select id="semester" value={semester} onChange={(e) => onSemesterChange(e.target.value as SemesterFilter)}>
           {SEMESTERS.map((s) => (
             <option key={s} value={s}>
