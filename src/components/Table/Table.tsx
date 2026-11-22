@@ -16,7 +16,7 @@ export default function Table({ rows }: TableProps) {
 
   return (
     <div className="w-full overflow-x-auto">
-      <table className="w-full min-w-max">
+      <table className="w-full min-w-max text-left">
         <thead>
           <tr className="text-left">
             <th>Role</th>
@@ -33,7 +33,7 @@ export default function Table({ rows }: TableProps) {
         </thead>
         <tbody>
           {sortedRows.map(({ member: m, role: r }) => (
-            <tr key={`${m.email}-${r.period}-${r.role}`}>
+            <tr key={`${m.email}-${r.period}-${r.role}`} className="hover:bg-white/5">
               <td>{r.role}</td>
               <td>{r.period}</td>
               <td>{m.full_name}</td>
