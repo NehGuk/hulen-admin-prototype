@@ -45,7 +45,7 @@ export default function Table({ rows }: TableProps) {
               <td className="py-4 md:py-2 pl-3 pr-5 whitespace-nowrap">{r.role}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">{formatPeriod(r.period)}</td>
               <td
-                className={`pl-3 pr-5 whitespace-nowrap transition-transform duration-200 hover:underline underline-offset-3 underlin cursor-pointer ${m.is_team_leader ? "text-deep-yellow font-medium" : ""}`}
+                className={`pl-3 pr-5 whitespace-nowrap transition-transform duration-200 hover:underline underline-offset-3 cursor-pointer ${m.is_team_leader ? "text-deep-yellow font-medium" : ""}`}
               >
                 {m.full_name}
               </td>
