@@ -23,11 +23,11 @@ export default function LoginForm({ onLogin }: LoginProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="p-3">
+    <form onSubmit={handleSubmit} className="p-3 mx-auto max-w-sm">
       <input type="email" value={email} required onChange={(e) => setEmail(e.target.value)} />
       <input type="password" value={password} required onChange={(e) => setPassword(e.target.value)} />
       <button type="submit">Log in</button>
-      {error && <p>{error}</p>}
+      {error && <p className="text-red">{error}</p>}
     </form>
   )
 }

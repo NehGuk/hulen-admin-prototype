@@ -6,7 +6,7 @@ type HeaderProps = {
 
 export default function Header({ isLoggedIn, onLogout }: HeaderProps) {
   return (
-    <header className="flex items-center justify-between p-3">
+    <header className={`p-3 ${isLoggedIn ? "flex justify-between" : "text-center"}`}>
       <h1>
         <span className="text-hulen-yellow">Hulen</span> Admin
       </h1>
