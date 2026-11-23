@@ -8,8 +8,6 @@ A frontend for viewing and managing human resources at Hulen.
 
 To build a simple front-end that reads data from a database. For now, I'm using a simple JSON file populated with some sample data, to simulate the object that will be fetched from the project's API.
 
----
-
 ## Frontend
 
 - React
@@ -31,8 +29,6 @@ The chosen font pairing for now is Bebas Neue (headers) and Abel (body). I've in
 ### Icons
 
 The [Lucide](https://lucide.dev) icon library is currently being used in this project.
-
----
 
 ## Running it locally
 
