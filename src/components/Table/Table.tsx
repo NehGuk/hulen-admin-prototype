@@ -1,13 +1,19 @@
 import type { MemberRow } from "../../types/types"
 import { formatPeriod } from "../../ultils/formatPeriod"
-import { Check, FileText } from "lucide-react"
+import { Check, FileText, Skull } from "lucide-react"
 
 type TableProps = {
   rows: MemberRow[]
 }
 
 export default function Table({ rows }: TableProps) {
-  if (rows.length === 0) return <p>Oops, no matches for these filters!</p>
+  if (rows.length === 0)
+    return (
+      <div className="">
+        <Skull size={80} strokeWidth={1} className="text-red mx-auto mt-14 md:mt-36" />
+        <p className="text-red mt-6 text-center font-bold text-xl">Oops, no matches for these filters!</p>
+      </div>
+    )
 
   const sortedRows = [...rows].sort(
     (a, b) =>
