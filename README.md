@@ -8,6 +8,8 @@ A frontend for viewing and managing human resources at Hulen.
 
 To build a simple front-end that reads data from a database. For now, I'm using a simple JSON file populated with some sample data, to simulate the object that will be fetched from the project's API.
 
+---
+
 ## Frontend
 
 - React
@@ -24,7 +26,13 @@ Based on the same yellow used in Hulen.no, I've created this WCAG AA-compliant c
 
 ### Typography
 
-For headers, I'm using Bebas Neue and for body text I'm using Abel.
+The chosen font pairing for now is Bebas Neue (headers) and Abel (body). I've installed them via pnpm packages, from the [Fontsource](https://fontsource.org) archive.
+
+### Icons
+
+The [Lucide](https://lucide.dev) icon library is currently being used in this project.
+
+---
 
 ## Running it locally
 
