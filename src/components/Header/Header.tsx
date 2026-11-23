@@ -10,7 +10,11 @@ export default function Header({ isLoggedIn, onLogout }: HeaderProps) {
       <h1>
         <span className="text-hulen-yellow">Hulen</span> Admin
       </h1>
-      {isLoggedIn && <button onClick={onLogout}>Log out</button>}
+      {isLoggedIn && (
+        <button onClick={onLogout} className="font-sans uppercase text-md hover:underline hover:underline-offset-3">
+          Log out
+        </button>
+      )}
     </header>
   )
 }

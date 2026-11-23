@@ -18,7 +18,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
       setError(null)
       onLogin()
     } else {
-      setError("Wrong email or password")
+      setError("Wrong email or password!")
     }
   }
 
@@ -41,7 +41,10 @@ export default function LoginForm({ onLogin }: LoginProps) {
           onChange={(e) => setPassword(e.target.value)}
           className="border p-3 focus:border-deep-yellow focus:outline-0"
         />
-        <button type="submit" className="bg-white py-3 font-hulen text-dark hover:bg-deep-yellow focus:bg-deep-yellow focus:outline-0">
+        <button
+          type="submit"
+          className="bg-white py-3 uppercase font-extrabold text-dark hover:bg-deep-yellow focus:bg-deep-yellow focus:outline-0"
+        >
           Log in
         </button>
         {error && <p className="text-red">{error}</p>}
