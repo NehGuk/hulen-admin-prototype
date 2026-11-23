@@ -2,11 +2,7 @@
 
 `under construction`
 
-A frontend for viewing and managing human resources at Hulen.
-
-## The idea is...
-
-To build a simple front-end that reads data from a database. For now, I'm using a simple JSON file populated with some sample data, to simulate the object that will be fetched from the project's API.
+A frontend for viewing and managing human resources at Hulen. We're building an application that shows a table with information retrieved from a database of volunteers, allowing managers to view and edit each entry. At the moment, though, the sample data is hard-coded in a JSON file. We'll connect this frontend to the real database once it becomes available.
 
 ## Frontend
 
@@ -24,7 +20,7 @@ Based on the same yellow used in Hulen.no, I've created this WCAG AA-compliant c
 
 ### Typography
 
-The chosen font pairing for now is Bebas Neue (headers) and Abel (body). I've installed them via pnpm packages, from the [Fontsource](https://fontsource.org) archive.
+The chosen font pairing for now is Bebas Neue (headers) and Abel (body). I've installed them via `pnpm` packages, from the [Fontsource](https://fontsource.org) archive.
 
 ### Icons
 
