@@ -23,11 +23,29 @@ export default function LoginForm({ onLogin }: LoginProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="p-3 mx-auto max-w-sm">
-      <input type="email" value={email} required onChange={(e) => setEmail(e.target.value)} />
-      <input type="password" value={password} required onChange={(e) => setPassword(e.target.value)} />
-      <button type="submit">Log in</button>
-      {error && <p className="text-red">{error}</p>}
+    <form onSubmit={handleSubmit} className="p-3 mx-auto max-w-sm flex-col items-center gap-4">
+      <div className="flex w-full flex-col gap-5 mt-12">
+        <input
+          type="email"
+          value={email}
+          placeholder="Email"
+          required
+          onChange={(e) => setEmail(e.target.value)}
+          className="border p-3 focus:border-deep-yellow focus:outline-0"
+        />
+        <input
+          type="password"
+          value={password}
+          placeholder="Password"
+          required
+          onChange={(e) => setPassword(e.target.value)}
+          className="border p-3 focus:border-deep-yellow focus:outline-0"
+        />
+        <button type="submit" className="bg-white py-3 font-hulen text-dark hover:bg-deep-yellow focus:bg-deep-yellow focus:outline-0">
+          Log in
+        </button>
+        {error && <p className="text-red">{error}</p>}
+      </div>
     </form>
   )
 }
