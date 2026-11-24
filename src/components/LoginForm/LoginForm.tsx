@@ -5,8 +5,8 @@ type LoginProps = {
   onLogin: () => void
 }
 
-/* const DEMO_EMAIL = import.meta.env.VITE_DEMO_EMAIL
-const DEMO_PASSWORD = import.meta.env.VITE_DEMO_PASSWORD */
+const DEMO_EMAIL = "admin@hulen.example.no"
+const DEMO_PASSWORD = "admin"
 
 export default function LoginForm({ onLogin }: LoginProps) {
   const [email, setEmail] = useState("admin@hulen.example.no")
@@ -14,7 +14,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
   const [error, setError] = useState<string | null>(null)
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
-    if (email === "admin@hulen.example.no" && password === "admin") {
+    if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
       setError(null)
       onLogin()
     } else {
@@ -27,7 +27,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
       <div className="flex w-full flex-col gap-5 mt-12">
         <input
           type="email"
-          value="admin@hulen.example.no"
+          value={email}
           placeholder="Email"
           required
           onChange={(e) => setEmail(e.target.value)}
@@ -35,7 +35,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
         />
         <input
           type="password"
-          value="admin"
+          value={password}
           placeholder="Password"
           required
           onChange={(e) => setPassword(e.target.value)}
