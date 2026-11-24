@@ -26,7 +26,7 @@ export default function Table({ rows }: TableProps) {
     <div className="w-full overflow-x-auto">
       <table className="w-full min-w-300 text-left">
         <thead>
-          <tr className="text-left border-t-4 border-deep-yellow/30">
+          <tr className="text-left border-t-3 border-deep-yellow/30">
             <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Role</th>
             <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Semester</th>
             <th className="pl-3 pr-5 pt-3 pb-3 whitespace-nowrap">Name</th>
