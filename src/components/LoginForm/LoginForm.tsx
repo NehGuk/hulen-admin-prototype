@@ -31,7 +31,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
           placeholder="Email"
           required
           onChange={(e) => setEmail(e.target.value)}
-          className="border p-3 focus:border-deep-yellow focus:outline-0"
+          className="text-base border p-3 focus:border-deep-yellow focus:outline-0"
         />
         <input
           type="password"
@@ -39,7 +39,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
           placeholder="Password"
           required
           onChange={(e) => setPassword(e.target.value)}
-          className="border p-3 focus:border-deep-yellow focus:outline-0"
+          className="text-base border p-3 focus:border-deep-yellow focus:outline-0"
         />
         <button
           type="submit"
