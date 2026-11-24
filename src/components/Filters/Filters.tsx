@@ -17,6 +17,7 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
           Role
         </label>
         <select id="role" value={role} onChange={(e) => onRoleChange(e.target.value as RoleFilter)}>
+          <option value="All roles">All roles</option>
           {ROLES.map((r) => (
             <option key={r} value={r}>
               {r}
@@ -28,6 +29,7 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
           Semester
         </label>
         <select id="semester" value={semester} onChange={(e) => onSemesterChange(e.target.value as SemesterFilter)}>
+          <option value="All semesters">All semesters</option>
           {SEMESTERS.map((s) => (
             <option key={s} value={s}>
               {formatPeriod(s)}

@@ -1,7 +1,6 @@
-/* We're keeping all types here on this file, except the Prop types, which appear right before each their respective component */
+/* All types live here, except the Props types, which stay next to their component */
 
 export const ROLES = [
-  "All roles",
   "Artistvert",
   "Bartender",
   "Booking",
@@ -19,21 +18,17 @@ export const ROLES = [
   "Styret",
 ] as const
 
-export const SEMESTERS = ["All semesters", "2026_2", "2026_1", "2025_2", "2025_1", "2024_2", "2024_1", "2023_2", "2023_1"] as const
+export const SEMESTERS = ["2026_2", "2026_1", "2025_2", "2025_1", "2024_2", "2024_1", "2023_2", "2023_1"] as const
 
 export const CURRENT_PERIOD = "2026_2"
 
-export type RoleName = Exclude<(typeof ROLES)[number], "All roles">
+export type RoleName = (typeof ROLES)[number]
+
+export type Period = (typeof SEMESTERS)[number]
 
 export type RoleFilter = RoleName | "All roles"
 
-export type SemesterName = "spring" | "autumn"
-
-export type SemesterFilter = (typeof SEMESTERS)[number]
-
-export type DugnadSemester = `${number}_${SemesterName}`
-
-export type Period = `${number}_${1 | 2}`
+export type SemesterFilter = Period | "All semesters"
 
 export type Role = {
   period: Period
@@ -55,7 +50,7 @@ export type Member = {
   is_team_leader: boolean
   roles: Role[] // newest first
   points: number
-  dugnads: DugnadSemester[]
+  dugnads: Period[] // newest first
   next_of_kin_full_name: string | null
   next_of_kin_phone_number: string | null
 }
