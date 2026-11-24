@@ -23,7 +23,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="p-3 mx-auto max-w-sm flex-col items-center gap-4">
+    <form onSubmit={handleSubmit} className="p-3 mx-auto w-4/5 md:max-w-sm flex-col items-center gap-4">
       <div className="flex w-full flex-col gap-5 mt-12">
         <input
           type="email"
