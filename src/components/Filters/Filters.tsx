@@ -20,7 +20,7 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
           id="role"
           value={role}
           onChange={(e) => onRoleChange(e.target.value as RoleFilter)}
-          className="w-full min-w-0 border-2 border-deep-yellow rounded-none appearance-none bg-dark px-3 py-3 text-sm text-white focus:border-hulen-yellow focus:outline-none"
+          className="w-full min-w-0 border-2 border-white/50 rounded-none appearance-none bg-dark px-3 py-3 text-sm text-white focus:border-hulen-yellow focus:outline-none"
         >
           <option value="All roles">All roles</option>
           {ROLES.map((r) => (
@@ -37,7 +37,7 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
           id="semester"
           value={semester}
           onChange={(e) => onSemesterChange(e.target.value as SemesterFilter)}
-          className="w-full min-w-0 border-2 border-deep-yellow rounded-none appearance-none bg-dark px-3 py-3 text-sm text-white focus:border-hulen-yellow focus:outline-none"
+          className="w-full min-w-0 border-2 border-white/50 rounded-none appearance-none bg-dark px-3 py-3 text-sm text-white focus:border-hulen-yellow focus:outline-none"
         >
           <option value="All semesters">All semesters</option>
           {SEMESTERS.map((s) => (
@@ -49,7 +49,7 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
         <input
           type="search"
           placeholder="Search by name, role, semester..."
-          className="col-span-2 w-full min-w-0 border-2 border-deep-yellow bg-dark px-3 py-3 text-sm text-white focus:border-hulen-yellow focus:outline-none md:col-span-1"
+          className="col-span-2 w-full min-w-0 border-2 border-white/50 bg-dark px-3 py-3 text-sm text-white focus:border-hulen-yellow focus:outline-none md:col-span-1"
         ></input>
 
         {/* Implement a search field here later */}
