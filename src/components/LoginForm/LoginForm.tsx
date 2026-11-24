@@ -47,7 +47,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
         >
           Log in
         </button>
-        {error && <p className="text-red">{error}</p>}
+        {error && <p className="text-red text-center">{error}</p>}
       </div>
     </form>
   )
