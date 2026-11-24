@@ -14,7 +14,7 @@ export default function LoginForm({ onLogin }: LoginProps) {
   const [error, setError] = useState<string | null>(null)
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
-    if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
+    if (email === "admin@hulen.example.no" && password === "admin") {
       setError(null)
       onLogin()
     } else {
