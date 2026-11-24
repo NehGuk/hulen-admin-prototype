@@ -56,7 +56,7 @@ export default function Table({ rows }: TableProps) {
               </td>
               <td className="pl-3 pr-5 whitespace-nowrap">{m.active_contract ? "Yep" : "Nope"}</td>
               <td className="pl-3 pr-5 whitespace-nowrap">
-                <a href="./../../../sample-contract-models/contract-sample.pdf" target="_blank">
+                <a href="/sample-contract-models/contract-sample.pdf" target="_blank">
                   <FileText
                     size={18}
                     strokeWidth={1}
