@@ -8,7 +8,6 @@ type FiltersProps = {
   semester: SemesterFilter
   onSemesterChange: (semester: SemesterFilter) => void
 }
-
 export default function Filters({ role, onRoleChange, semester, onSemesterChange }: FiltersProps) {
   return (
     <section className="py-6">
@@ -48,14 +47,9 @@ export default function Filters({ role, onRoleChange, semester, onSemesterChange
         </select>
         <input
           type="search"
-          placeholder="Search by name, role, semester..."
+          placeholder="Search by name, role, semester, meh, whatever..."
           className="text-base md:text-lg col-span-2 w-full min-w-0 border-2 border-white/50 bg-dark px-3 py-3 text-white focus:border-hulen-yellow focus:outline-none md:col-span-1"
         ></input>
-
-        {/* Implement a search field here later */}
-
-        {/* <label htmlFor="search"></label>
-        <input type="text" id="search" placeholder="Search by name, email, role..." /> */}
       </form>
     </section>
   )
